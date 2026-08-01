@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Moving to Berlin from the US, with kids — a guide</title>
+
+<!-- ============================================================
+     HOW TO EDIT THIS FILE
+     - All the text lives below in the <body>. Edit it like a document.
+     - Blank form fields:  <span class="fill">your note here</span>
+       ...once you fill one in, change class="fill" to class="filled".
+     - Deadline stamps:    <span class="stamp">14 days</span>
+     - To change colours or fonts, edit the :root block just below.
+     - To make a PDF: open in a browser and print to PDF.
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#F0F1EC;
+  --ink:#17191A;
+  --faint:#6B6F68;
+  --rule:#C9CBC2;
+  --stamp:#3F3D91;
+  --flag:#B02A1F;
+
+  --display:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --body:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --mono:'Space Mono','SFMono-Regular',Consolas,monospace;
+
+  --measure:34rem;
+}
+
+*{box-sizing:border-box}
+
+html{-webkit-text-size-adjust:100%}
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:17px;
+  line-height:1.62;
+  padding:0 1.5rem 6rem;
+}
+
+.sheet{max-width:52rem;margin:0 auto}
+
+/* ---------- masthead ---------- */
+
+.masthead{
+  padding:4.5rem 0 2rem;
+  border-bottom:2px solid var(--ink);
+}
+
+.eyebrow{
+  font-family:var(--mono);
+  font-size:.7rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--stamp);
+  margin:0 0 1.75rem;
+}
+
+.masthead h1{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:clamp(2rem,6vw,3.4rem);
+  line-height:1.04;
+  letter-spacing:-.025em;
+  margin:0 0 .6rem;
+  max-width:20ch;
+}
+
+.masthead .deck{
+  font-size:clamp(1.05rem,2.4vw,1.3rem);
+  color:var(--faint);
+  font-style:italic;
+  margin:0;
+  max-width:40ch;
+}
+
+.docmeta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.4rem 2.5rem;
+  font-family:var(--mono);
+  font-size:.72rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--faint);
+  padding:1rem 0 0;
+  margin-top:2.25rem;
+  border-top:1px solid var(--rule);
+}
+.docmeta b{color:var(--ink);font-weight:700}
+
+/* ---------- notice ---------- */
+
+.notice{
+  border:1px solid var(--rule);
+  border-left:3px solid var(--stamp);
+  background:rgba(63,61,145,.035);
+  padding:1.15rem 1.35rem;
+  margin:2.5rem 0 0;
+  font-size:.94rem;
+  line-height:1.55;
+}
+.notice p{margin:0}
+.notice .label{
+  display:block;
+  font-family:var(--mono);
+  font-size:.68rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--stamp);
+  margin-bottom:.5rem;
+}
+
+/* ---------- generic prose ---------- */
+
+p{max-width:var(--measure)}
+h2,h3{max-width:var(--measure)}
+
+.intro{padding:3.25rem 0 1rem}
+
+.intro h2{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:1.5rem;
+  letter-spacing:-.015em;
+  margin:0 0 1rem;
+}
+
+strong{font-weight:600}
+em{font-style:italic}
+
+/* ---------- the dependency spine ---------- */
+
+.phase{
+  position:relative;
+  padding:3.25rem 0 1.5rem 3.25rem;
+  border-left:1px solid var(--rule);
+  margin-left:.5rem;
+}
+.phase:last-of-type{border-left-color:transparent}
+
+.phase::before{
+  content:'';
+  position:absolute;
+  left:-5px;
+  top:3.9rem;
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--stamp);
+}
+
+.phase .num{
+  position:absolute;
+  left:1rem;
+  top:3.45rem;
+  font-family:var(--mono);
+  font-weight:700;
+  font-size:.7rem;
+  letter-spacing:.1em;
+  color:var(--stamp);
+}
+
+.phase .when{
+  font-family:var(--mono);
+  font-size:.7rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--faint);
+  margin:0 0 .55rem;
+}
+
+.phase h2{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:clamp(1.35rem,3.4vw,1.9rem);
+  line-height:1.15;
+  letter-spacing:-.02em;
+  margin:0 0 1.1rem;
+}
+
+.phase h3{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:1.02rem;
+  letter-spacing:.005em;
+  margin:2.25rem 0 .6rem;
+}
+
+.phase ol,.phase ul{max-width:var(--measure);padding-left:1.15rem;margin:.85rem 0}
+.phase li{margin-bottom:.5rem}
+
+/* branch = second-order dependency, hangs off its parent not the trunk */
+
+.branch{
+  position:relative;
+  margin:1.5rem 0 1.5rem 1.5rem;
+  padding:.15rem 0 .15rem 1.5rem;
+  border-left:1px dashed var(--rule);
+  max-width:calc(var(--measure) - 1.5rem);
+}
+.branch::before{
+  content:'';
+  position:absolute;
+  left:-4px;
+  top:1rem;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--paper);
+  border:1.5px solid var(--stamp);
+}
+.branch .blabel{
+  font-family:var(--mono);
+  font-size:.66rem;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--stamp);
+  display:block;
+  margin-bottom:.35rem;
+}
+.branch p{margin:0;font-size:.95rem}
+
+/* ---------- deadline stamp ---------- */
+
+.stamp{
+  display:inline-block;
+  font-family:var(--mono);
+  font-weight:700;
+  font-size:.66rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--flag);
+  border:1.5px solid var(--flag);
+  border-radius:2px;
+  padding:.18rem .45rem;
+  transform:rotate(-1.5deg);
+  white-space:nowrap;
+}
+
+/* ---------- form field / to-be-completed ---------- */
+
+.fill{
+  display:block;
+  font-family:var(--mono);
+  font-size:.8rem;
+  line-height:1.5;
+  color:var(--faint);
+  background:rgba(255,255,255,.5);
+  border:1px dashed var(--rule);
+  border-radius:2px;
+  padding:.7rem .85rem .75rem;
+  margin:.9rem 0;
+  max-width:var(--measure);
+}
+.fill::before{
+  content:'To complete —';
+  color:var(--stamp);
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-size:.64rem;
+  display:block;
+  margin-bottom:.35rem;
+}
+.filled{
+  display:block;
+  border-left:2px solid var(--stamp);
+  padding-left:.9rem;
+  margin:.9rem 0;
+  max-width:var(--measure);
+}
+
+/* ---------- table ---------- */
+
+.tablewrap{
+  margin:1.75rem 0;
+  overflow-x:auto;
+  border-top:2px solid var(--ink);
+  border-bottom:2px solid var(--ink);
+}
+
+table{
+  width:100%;
+  min-width:38rem;
+  border-collapse:collapse;
+  font-size:.86rem;
+}
+
+thead th{
+  font-family:var(--mono);
+  font-weight:700;
+  font-size:.64rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  text-align:left;
+  color:var(--faint);
+  padding:.7rem .9rem;
+  border-bottom:1px solid var(--rule);
+  white-space:nowrap;
+}
+
+tbody td{
+  padding:.72rem .9rem;
+  border-bottom:1px solid var(--rule);
+  vertical-align:top;
+}
+tbody tr:last-child td{border-bottom:none}
+
+tbody td:first-child{font-weight:600;font-family:var(--display);font-size:.88rem}
+tbody td:nth-child(3),
+tbody td:nth-child(4){font-family:var(--mono);font-size:.76rem;line-height:1.45}
+tbody td:nth-child(3){color:var(--stamp)}
+
+tr.second td:nth-child(3){font-weight:700}
+tr.second td:first-child::before{
+  content:'└ ';
+  color:var(--stamp);
+  font-family:var(--mono);
+  font-weight:400;
+}
+
+.tnote{
+  font-size:.86rem;
+  color:var(--faint);
+  max-width:var(--measure);
+  margin:-.4rem 0 0;
+}
+
+/* ---------- closing ---------- */
+
+.closing{
+  margin:4.5rem 0 0;
+  padding:2.5rem 0 0;
+  border-top:2px solid var(--ink);
+}
+.closing h2{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:clamp(1.3rem,3.2vw,1.75rem);
+  letter-spacing:-.02em;
+  margin:0 0 .5rem;
+}
+
+.colophon{
+  margin-top:3.5rem;
+  padding-top:1.1rem;
+  border-top:1px solid var(--rule);
+  font-family:var(--mono);
+  font-size:.72rem;
+  line-height:1.65;
+  color:var(--faint);
+  max-width:42ch;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width:640px){
+  body{font-size:16px;padding:0 1.1rem 4rem}
+  .phase{padding-left:1.5rem;margin-left:.35rem}
+  .phase .num{position:static;display:block;margin-bottom:.3rem}
+  .phase::before{top:3.55rem}
+  .branch{margin-left:0}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+
+/* ---------- print / PDF ---------- */
+
+@media print{
+  body{background:#fff;font-size:10.5pt;padding:0}
+  .sheet{max-width:none}
+  .masthead{padding-top:0}
+  .phase{page-break-inside:auto}
+  .phase h2,.phase h3{page-break-after:avoid}
+  .tablewrap,.notice,.branch,.fill{page-break-inside:avoid}
+  table{min-width:0}
+  a{text-decoration:none;color:inherit}
+}
+</style>
+</head>
+
+<body>
+<div class="sheet">
+
+<!-- ==================== MASTHEAD ==================== -->
+<header class="masthead">
+  <p class="eyebrow">Working draft · v0</p>
+  <h1>Moving to Berlin from the US, with kids</h1>
+  <p class="deck">The guide I wish I'd had when I moved my family from California to Berlin.</p>
+
+  <div class="docmeta">
+    <span>Written from <b>one family's move</b></span>
+    <span>Route <b>California → Berlin</b></span>
+    <span>Arrived <b>June 2026</b></span>
+    <span>Children <b>2</b></span>
+  </div>
+</header>
+
+<div class="notice">
+  <span class="label">Before you rely on this</span>
+  <p>German administrative rules change, and appointment systems change faster. Verify anything time-sensitive against service.berlin.de. This is one family's route through the system, not legal advice — and where money or residence status is involved, the right answer is a professional, not a guide.</p>
+</div>
+
+<!-- ==================== INTRO ==================== -->
+<section class="intro">
+  <h2>How to read this</h2>
+  <p>Almost nothing in Berlin happens in parallel. Each step unlocks the next one, and everything hangs off a single first step: the <strong>Anmeldung</strong>, your address registration. Until it's done you are administratively invisible: no tax ID, no bank account, no childcare voucher, no school place, no child benefit.</p>
+  <p>The second thing to understand is that the constraint is almost never the process. Most of these steps take fifteen minutes at a counter. Getting <em>to</em> that counter takes weeks. Plan around booking lead times, not processing times.</p>
+</section>
+
+<!-- ==================== PHASE 0 ==================== -->
+<section class="phase">
+  <span class="num">00</span>
+  <p class="when">Before you leave the US</p>
+  <h2>The phase that matters most</h2>
+  <p>Several of these become dramatically harder — or impossible — once you're on the wrong continent.</p>
+
+  <h3>Documents to apostille before you go</h3>
+  <ul>
+    <li>Children's birth certificates</li>
+    <li>Marriage certificate and/or divorce decree</li>
+    <li>Any custody or parental-authority orders</li>
+  </ul>
+  <p>An apostille is a state-level authentication — in California, through the Secretary of State. German offices will ask for these repeatedly: Kita-Gutschein, school enrollment, Kindergeld, and any custody question. Retrieving them from abroad afterwards costs weeks and money.</p>
+
+  <h3>Certified translations</h3>
+  <p>Budget for these. German authorities generally want a court-sworn translator (<em>beeidigter Übersetzer</em>). This is often easier to arrange in Germany after arrival, and sometimes required.</p>
+
+  <h3>Vaccination records</h3>
+  <p>Proof of measles immunity is required for entry into any Kita or school. US immunization records use a different schedule and format — get a complete printed record from your pediatrician with dates and vaccine names, and plan to have a German pediatrician transfer it into an <em>Impfpass</em>.</p>
+  <span class="fill">How you handled this — did a Kinderarzt reissue the Impfpass, and how long did it take to get a Kinderarzt appointment at all?</span>
+
+  <h3>Driver's licence</h3>
+  <p>Get a certified driving record from your DMV before you leave. Whether you can simply exchange your licence or must retake tests depends on <strong>which state issued it</strong> — states hold individual reciprocity agreements with Germany, and California is not a full-reciprocity state.</p>
+  <span class="fill">Your read on the California situation specifically — what you found, and what it means in practice.</span>
+
+  <h3>Things to keep, not close</h3>
+  <p>A US bank account and a US phone number. Enormous amounts of US financial 2FA are SMS-based and will not reach a German number. Closing these early is the most common self-inflicted wound of the whole move.</p>
+  <p>Your US brokerage — but don't move funds without advice first. US-domiciled ETFs and mutual funds interact badly with the German Investmentsteuergesetz, and EU-based brokers generally cannot sell them to you. This is a Steuerberater question, not a blog question.</p>
+
+  <h3>School applications</h3>
+  <p>International and bilingual schools run admissions cycles that close months ahead, entirely independently of the state Schulamt process. If a specific school matters to you, this belongs here in Phase 0 — not after arrival.</p>
+  <span class="fill">JFKS timeline — Entrance Class deadlines, what the application actually required, how far ahead you started.</span>
+</section>
+
+<!-- ==================== PHASE 1 ==================== -->
+<section class="phase">
+  <span class="num">01</span>
+  <p class="when">Days 1–14</p>
+  <h2>The Anmeldung, and only the Anmeldung</h2>
+
+  <p>Legally you must register within 14 days of moving in. <span class="stamp">14 days</span> Practically, Bürgeramt appointment slots are scarce. Book the moment you have a move-in date — you can book before you arrive, and you can book at <em>any</em> Bürgeramt in the city, not only your district's.</p>
+
+  <h3>What actually blocks you</h3>
+  <p>The <strong>Wohnungsgeberbestätigung</strong> — a signed confirmation from your landlord that you have moved in. Your rental contract is not a substitute. Your landlord is legally obliged to provide it within two weeks of move-in, so ask at signing rather than after.</p>
+
+  <h3>Register the children at the same appointment</h3>
+  <p>Book a slot per person. If you are co-parenting or divorced you will also be declaring which address is each child's <em>Hauptwohnung</em>. This is not a formality — it determines school catchment, Kindergeld eligibility and later tax treatment. Decide before you're standing at the counter.</p>
+  <span class="fill">What you needed to bring to register the children specifically — birth certificates, both parents' consent, anything else?</span>
+
+  <h3>What you walk out with</h3>
+  <p>The <em>Meldebescheinigung</em>. Make several copies immediately. You will be asked for it constantly for the next three months.</p>
+</section>
+
+<!-- ==================== PHASE 2 ==================== -->
+<section class="phase">
+  <span class="num">02</span>
+  <p class="when">Days 14–30</p>
+  <h2>What the Anmeldung unlocks</h2>
+  <p>These open up roughly in parallel, but with very different lead times.</p>
+
+  <div class="tablewrap">
+  <table>
+    <thead>
+      <tr><th>Task</th><th>Where</th><th>Depends on</th><th>Realistic timing</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Steuer-ID</td><td>Arrives by post automatically</td><td>Anmeldung</td><td>2–3 weeks, unprompted</td></tr>
+      <tr><td>Bank account</td><td>Bank</td><td>Anmeldung</td><td>Days</td></tr>
+      <tr><td>Health insurance</td><td>Krankenkasse</td><td>Anmeldung</td><td>1–3 weeks</td></tr>
+      <tr><td>Personalausweis</td><td>Bürgeramt (German citizens)</td><td>Anmeldung</td><td>Separate appointment; weeks to produce</td></tr>
+      <tr><td>Kita-Gutschein</td><td>District Jugendamt</td><td>Anmeldung</td><td>Apply 2–9 months before start</td></tr>
+      <tr><td>School registration</td><td>District Schulamt</td><td>Anmeldung</td><td>Cycle-dependent</td></tr>
+      <tr class="second"><td>Hortgutschein / eFöB</td><td>Through the school, <em>not</em> the Jugendamt</td><td>Confirmed school place</td><td>Apply once the place is confirmed</td></tr>
+      <tr class="second"><td>Kindergeld</td><td>Familienkasse</td><td>Steuer-ID — yours and each child's</td><td>Weeks; backdated max 6 months</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p class="tnote">The two indented rows are the ones that trip people up. They don't follow straight from the Anmeldung — something else has to land first. That's why they get missed: you try them on day one, find you can't file yet, and never come back to them.</p>
+
+  <div class="branch">
+    <span class="blabel">You can't file this yet · needs your Steuer-ID first</span>
+    <p><strong>Kindergeld is backdated a maximum of six months</strong> from application. <span class="stamp">6-month clock</span> Every month you delay past that is money you simply don't get. Watch for the tax IDs arriving in the post — that's the milestone that unblocks it.</p>
+  </div>
+
+  <h3>Health insurance is more urgent than it looks</h3>
+  <p>Coverage is mandatory from day one of residence, and gaps can be charged retroactively. If you aren't employed yet you'll need to sort out how you're insured in the interim — one of the genuinely thorny US→Germany transition points, and worth getting right early.</p>
+  <span class="fill">How you handled the pre-employment period.</span>
+</section>
+
+<!-- ==================== PHASE 3 ==================== -->
+<section class="phase">
+  <span class="num">03</span>
+  <p class="when">Days 30–90</p>
+  <h2>Children's places</h2>
+  <p>This is where two children diverge into completely different processes — and where the naming gets confusing.</p>
+
+  <h3>Younger child — Kita</h3>
+  <ol>
+    <li>Apply for the <strong>Kita-Gutschein</strong> at the Jugendamt of <em>your</em> district. Not the Kita's district. Yours.</li>
+    <li>The voucher specifies an hours band. This matters more than it sounds: Kitas favour children with larger vouchers because they're funded better, so the band you're granted affects how easy it is to find a place at all.</li>
+    <li>The voucher and the place are two separate hunts. Having a voucher doesn't get you a spot; having a spot offer doesn't fund it. Run both searches at once.</li>
+  </ol>
+  <span class="fill">What you were actually granted, and what the Jugendamt asked for. Did you need proof of employment or job-seeking status?</span>
+
+  <h3>Older child — Grundschule and after-school care</h3>
+  <ol>
+    <li>Register with the <strong>Schulamt</strong> of your district. State primary school is free and catchment-based.</li>
+    <li>Children without sufficient German are typically routed through a <em>Willkommensklasse</em> for around a year before joining a regular class. Worth understanding in advance — it's a significant decision point for a US family weighing a bilingual or international school instead.</li>
+  </ol>
+
+  <div class="branch">
+    <span class="blabel">You can't file this yet · needs the school place first</span>
+    <p>After-school care is the <strong>Hortgutschein / eFöB</strong> (<em>ergänzende Förderung und Betreuung</em>) — a different voucher from the Kita-Gutschein, applied for through the school rather than the Jugendamt. For grades 1–3 the core hours are free and no proof of employment is required, which genuinely matters if you're arriving without a job yet.</p>
+  </div>
+  <span class="fill">Confirm the current rules and describe how the application actually ran.</span>
+
+  <h3>If you're going the international or bilingual route</h3>
+  <p>JFKS, Berlin British, BIS and similar run entirely outside the above, on their own calendars.</p>
+  <span class="fill">JFKS specifics — Entrance Class, what the process looked like from the inside, sibling policy.</span>
+</section>
+
+<!-- ==================== PHASE 4 ==================== -->
+<section class="phase">
+  <span class="num">04</span>
+  <p class="when">Months 3–6</p>
+  <h2>The slow burn</h2>
+
+  <h3>Driver's licence</h3>
+  <p>You may drive on a valid US licence for six months from establishing residence. <span class="stamp">6-month limit</span> After that you need a German one, and the <em>Umschreibung</em> takes months to process — so start around month two or three, not month five.</p>
+  <span class="fill">Process, cost, and what the California situation meant in practice.</span>
+
+  <h3>Your US tax obligations do not end</h3>
+  <p>US citizens file US returns from abroad, permanently, regardless of where the income is earned. Add FBAR reporting once combined foreign account balances cross the threshold. Budget for a preparer who handles both sides.</p>
+
+  <h3>Pension and social security</h3>
+  <p>The US and German systems interact through a totalization agreement, and there are German credits for child-rearing years (<em>Kindererziehungszeiten</em>) that Americans routinely don't know to claim. A <em>Kontenklärung</em> with the Deutsche Rentenversicherung is the starting point.</p>
+  <span class="fill">What you learned here.</span>
+</section>
+
+<!-- ==================== CLOSING ==================== -->
+<section class="closing">
+  <h2>The five things that would have saved me the most time</h2>
+  <p>This is the section nobody else can write, and the one people will actually share.</p>
+  <span class="fill">Entirely yours. Candidates from your own move: booking Bürgeramt appointments before arrival · the Wohnungsgeberbestätigung being the real blocker · keeping the US phone number · the Kindergeld six-month clock · the Kita-Gutschein and Hortgutschein being two different things.</span>
+
+  <p class="colophon">
+    Written by a Berliner who left for a decade and came back with two kids and an American passport.<br>
+    Corrections and additions welcome.
+  </p>
+</section>
+
+</div>
+</body>
+</html>
